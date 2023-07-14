@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:.*CollisionGeometry.*already registered.*:RuntimeWarning"
+]
+testpaths = [
+    "tests",
+]

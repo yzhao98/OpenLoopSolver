@@ -1,0 +1,32 @@
+name: manipulator
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - pytorch-nightly
+dependencies:
+  - python=3.8  # required by drake
+  - pytorch-nightly::pytorch
+  - tqdm
+  - pip
+  - click
+  # drake, croccoddyl, pinocchio should be linked to the one in /opt
+  - pip:
+      - meshcat
+      - stable-baselines3==2.0.0a5
+      - gymnasium==0.28.1
+      - yacs
+      - tensorboard
+      - lightning
+      - geometrout==0.0.3.4
+      - pyquaternion
+      - python-sdformat
+      - h5py
+      - typer
+      - fastapi
+      - pydantic
+      - ikfast-pybind-tmp
+  - numpy==1.24.3
+  - pytest
+  - scipy
+  - wandb

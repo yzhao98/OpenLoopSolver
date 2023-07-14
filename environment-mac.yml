@@ -1,0 +1,27 @@
+name: manipulator
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - pytorch-nightly
+dependencies:
+  - python=3.11  # required by drake
+  - pytorch-nightly::pytorch
+  - tqdm
+  - pip
+  - click
+  - pinocchio==2.6.18
+  - crocoddyl==2.0.0
+  - pip:
+      - drake
+      - meshcat
+      - stable-baselines3==2.0.0a5
+      - gymnasium==0.28.1
+      - yacs
+      - tensorboard
+      - lightning
+  - numpy==1.24.3
+  - pytest
+  - scipy
+  - wandb
+
